@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><path d="M128,128h32v32H128Z"/><path d="M96,128V96h32v32Z"/><path d="M96,128v32H64V128Z"/><path d="M192,64H160V96h32Z"/><path d="M0,0V256H256V0ZM224,224H160V192h32V160h32Zm-64-64h32V128h32V32H32V160H64v32H32v32h96V192h32Z" fill-rule="evenodd"/></svg>
