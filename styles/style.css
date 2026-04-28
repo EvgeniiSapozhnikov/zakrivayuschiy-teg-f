@@ -381,8 +381,7 @@ dialog::backdrop {
   box-shadow: 2px 2px 0px #000;
 }
 
-.button__general span,
-.button__general p {
+.button__general span {
   position: relative;
   z-index: 2;
   color: var(--text-color, #fff);
