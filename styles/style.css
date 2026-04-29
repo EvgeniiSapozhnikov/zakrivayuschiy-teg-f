@@ -68,6 +68,7 @@ svg {
   width: var(--block-width);
   border: 2px solid #000;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .card__title {
@@ -204,13 +205,17 @@ svg {
 }
 
 .button__close {
-  width: clamp(261px, (261px + (100vw - 375px) / (1440 - 375) * (293 - 261)), 293px);
-  padding: 12.5px;
+  width: 100%;
+  padding: 10.5px;
+  box-sizing: border-box;
 }
 
 .button__text {
-  line-height: 0.9;
-  font-size: 13px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
 
 .card__icon-button {
@@ -305,7 +310,6 @@ svg {
   justify-content: center;
   align-items: center;
   width: var(--block-width);
-  margin-top: 50px;
   margin-bottom: 100px;
 }
 
@@ -343,7 +347,7 @@ dialog:not([open]) {
 
 .save__info {
   display: flex;
-  width: clamp(261px, (261px + (100vw - 375px) / (1440 - 375) * (293 - 261)), 293px);
+  width: 100%;
   flex-direction: row;
   align-items: center;
   gap: 20px;
@@ -354,27 +358,21 @@ dialog:not([open]) {
   height: 39px;
 }
 
-.save__text {
-  font-weight: 400;
+.save__dialog-window .button__text {
   font-size: 14px;
-  line-height: 90%;
-  letter-spacing: 0;
-  white-space: nowrap;
-}
-
-.save__dialog-window .save__text {
   font-family: var(--font-family-accent), Arial, sans-serif;
   line-height: 150%;
   text-transform: uppercase;
   white-space: wrap;
 }
 
-dialog::backdrop {
-  background-color: rgb(0 0 0 / 0.75);
+.button__close .button__text {
+  line-height: 100%;
+  text-transform: uppercase;
 }
 
-.close__text {
-  text-transform: uppercase;
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
 }
 
 .button__general:focus {
@@ -425,6 +423,6 @@ dialog::backdrop {
   }
 
   .save__dialog-window {
-    padding: 30px 40px;
+    padding: 28px 38px;
   }
 }

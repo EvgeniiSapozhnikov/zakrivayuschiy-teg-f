@@ -576,8 +576,7 @@
           </div>
         </div>
       </article>
-    </main>
-    <div class="save__container">
+      <div class="save__container">
       <button
         class="button__general button__save"
         type="button"
@@ -592,9 +591,10 @@
         >
           <use href="svg/floppy_symbol.svg#floppy" />
         </svg>
-        <span class="save__text">Сохранить на память</span> <!--если span заменяю на p, автотесты гитхаба завершаются с ошибкой: Element “p” not allowed as child of element “button” in this context.-->
+        <span class="button__text">Сохранить на память</span> <!--если span заменяю на p, автотесты гитхаба завершаются с ошибкой: Element “p” not allowed as child of element “button” in this context.-->
       </button>
     </div>
+    </main>
     <dialog class="save__dialog-window" id="save__dialog">
         <div class="save__info">
           <svg
@@ -604,14 +604,14 @@
           >
             <use href="svg/floppy_symbol.svg#floppy" />
           </svg>
-          <p class="save__text">Вставьте дискету, чтобы продолжить</p>
+          <p class="button__text">Вставьте дискету, чтобы продолжить</p>
         </div>
         <button
           class="button__general button__close"
           type="button"
           onclick="window['save__dialog'].close()"
         >
-          <span class="close__text">OK</span>
+          <span class="button__text">OK</span>
         </button>
       </dialog>
     <script src="./scripts/like.js"></script>
